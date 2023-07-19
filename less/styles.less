@@ -284,12 +284,6 @@ body {
 		text-align: center;
 
 		.content--description__highlight { color: @primary-colour; }
-
-		.user-details {
-			border: 1px solid @primary-colour;
-			margin: 0 30px 10px;
-			padding: 10px;
-		}
 	}
 
 	.content--section {
@@ -328,12 +322,66 @@ body {
 		.content--section--list {
 			.no-list-style ();
 		}
-	
-		&.github {
-			
+	}
+
+	.experience {
+		.experience--list {
+			margin-top: 20px;
+
+			.experience--link { text-decoration: underline; }
+
+			.experience--item {
+				margin-bottom: 10px;
+
+				.experience--place,
+				.experience--position,
+				.experience--description {
+					margin: 5px 0;
+					padding-left: 10px;
+					display: inline-block;
+				}
+
+				.experience--place span { color: @primary-colour; }
+				.experience--description { font-size: 95%; display: block; }
+			}
 		}
 	}
 
+	.skills {
+
+		.skills--section--title {
+			font-weight: normal;
+			border-bottom: 1px solid @soft-grey;
+			color: @soft-grey;
+		}
+
+		.skills--section--list {
+			.no-list-style();
+
+			.skills--section--item {
+				margin: 0 0 4px 0;
+				padding: 2px 7px;
+				display: inline-block;
+				
+				background-color: @extra-soft-grey;
+			}
+		}
+	}
+
+	.myself--description {
+		margin-top: 20px;
+		padding: 10px;
+
+		box-shadow: inset 0 0 25px #fff;
+		background-color: @primary-colour-opacity;
+		.myself--description--paragraph {
+			margin: 2px;
+			.myself--description__highlight {
+				color: @primary-colour;
+				text-shadow: @primary-colour 0.01em 0.01em;
+			}
+		}
+	}
 }
 
 .footer {
