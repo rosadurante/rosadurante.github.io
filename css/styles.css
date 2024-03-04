@@ -834,6 +834,9 @@ body a {
 .header .header--email {
   display: none;
 }
+.header .header--phone {
+  display: none;
+}
 .header .header--full-name {
   position: relative;
   margin-top: 60px;
@@ -1036,7 +1039,8 @@ body a {
     scale: 100%;
     font-size: 90%;
   }
-  .header .header--email {
+  .header .header--email,
+  .header .header--phone {
     display: block;
   }
   .social-networks {
