@@ -1,23 +1,35 @@
 {
-  "name": "rosadurante",
-  "version": "0.2.0",
-  "description": "Rosa Durante personal website.",
-  "author": "rosa-durante",
-  "engines": {
-    "node": ">=18.0.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/rosadurante/rosadurante.git"
-  },
-  "devDependencies": {
-    "grunt": "^1.6.1",
-    "grunt-cli": "^1.4.3",
-    "grunt-contrib-connect": "^4.0.0",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-open": "~0.2.2"
+  "name": "rosadurante.github.io",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "grunt-open": "~0.2.2"
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^3.0.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   }
 }
