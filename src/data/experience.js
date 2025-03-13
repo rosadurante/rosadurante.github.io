@@ -1,5 +1,6 @@
 export const EXPERIENCE = {
   es: [{
+    key: 'exp-8',
     position: 'Desarrolladora Front End',
     begins: 'Nov 2023',
     ends: 'actualmente',
@@ -8,6 +9,7 @@ export const EXPERIENCE = {
     summary: 'At You Shift, I am working on their product adding new features, improving aspects of different views and fixing bugs. The whole frontend is built using React and TailwindCSS. Their backend is built in Python.', 
     description: '',
   }, {
+    key: 'exp-7',
     position: 'Emprendimiento de marca',
     begins: 'May 2018',
     ends: 'Feb 2023',
@@ -16,6 +18,7 @@ export const EXPERIENCE = {
     summary: '',
     description: '',
   }, {
+    key: 'exp-6',
     position: 'Desarrolladora Front End',
     begins: 'Ene 2015',
     ends: 'Mar 2017',
@@ -24,6 +27,7 @@ export const EXPERIENCE = {
     summary: 'At Potato, I was working on several different projects: from big web applications backend and frontend heavy improving my knowledge in AngularJS as well as Python/Django to very light web pages maily frontend using latest features of CSS3, animations and also introducing ES6.',
     description: '',
   }, {
+    key: 'exp-5',
     position: 'Desarrolladora Front End',
     begins: 'Jul 2014',
     ends: 'Dic 2014',
@@ -32,6 +36,7 @@ export const EXPERIENCE = {
     summary: 'I am part of the <a class="experience--link" href="http://advertising.apple.com/" target="_blank">iAds</a> team within Beyond where I have been building tiny advertisment projects for Apple devices. They are built based on HTML/CSS/JS which required lots of different CSS animations and some JS Canvas for those that were games.',
     description: '',
   }, {
+    key: 'exp-4',
     position: 'Desarrolladora Front End',
     begins: 'Nov 2013',
     ends: 'Jul 2014',
@@ -40,6 +45,7 @@ export const EXPERIENCE = {
     summary: 'I started working at Yourvine as a Frontend Engineer, building <span>yourvine.com</span>. The platform is a single-page web application which is written using AngularJS in frontend and Python/Django as backend, following a strong OO programming and a service-orientation design pattern. I have been working in a very small team using Agile methodology to organise and plan every week. I also made a large amount of contributions to the backend improving my skills with Python/Django.',
     description: '',
   }, {
+    key: 'exp-3',
     position: 'Desarrolladora Front End',
     begins: 'Mar 2012',
     ends: 'Nov 2013',
@@ -48,6 +54,7 @@ export const EXPERIENCE = {
     summary: 'As a frontend developer I worked on several internal management web applications and public web applications like Zonza.tv. Whilst working on these projects we enhanced the plataforms looks and feel using technologies such as HTML5, CSS3, Javascript and frameworks JS like jQuery, RequireJS and BackboneJS. Also I provided my point of view about the design of both platforms. I was also part of the team who built <a class="experience--link" href="http://www.copycentral.co.uk">Copycentral</a>, a new advertising clearance system, being its lead frontend developer.',
     description: '',
   }, {
+    key: 'exp-2',
     position: 'Desarrolladora Front End, Calidad y Usabilidad Web',
     begins: 'Jun 2011',
     ends: 'Feb 2012',
@@ -56,6 +63,7 @@ export const EXPERIENCE = {
     summary: 'As co-founder of this project of start-up, I worked on several different aspects; firstly, I did the design and front-end developement of our web page, using Django as a base, and tools such as jQuery, jQuery Mobile or Twitter Bootstrap. Also, I did some work on Android development, focusing on some crucial proofs of concept ideas.',
     description: '',
   }, {
+    key: 'exp-1',
     position: 'Desarrolladora de Calidad',
     begins: 'Jun 2010',
     ends: 'May 2012',

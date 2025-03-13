@@ -1,260 +1,257 @@
 export const SKILLS = {
   es: [{
     group: 'JS',
-    name: 'ReactJS',
-    level: 'Intermedio'
-  }, {
-    group: 'JS',
-    name: 'Redux',
-    level: 'Básico'
-  }, {
-    group: 'JS',
-    name: 'Angular 2+',
-    level: 'Muy Básico'
-  }, {
-    group: 'JS',
-    name: 'Typescript',
-    level: 'Muy Básico'
-  }, {
-    group: 'JS',
-    name: 'NodeJS',
-    level: 'Básico'
-  }, {
-    group: 'JS',
-    name: 'Vanilla Javascript',
-    level: 'Intermedio'
-  }, {
-    group: 'JS',
-    name: 'Express',
-    level: 'Básico'
-  }, {
-    group: 'JS',
-    name: 'Webpack',
-    level: 'Básico'
-  }, {
-    group: 'JS',
-    name: 'Vite',
-    level: 'Básico'
-  }, {
-    group: 'JS',
-    name: 'jQuery',
-    level: 'Avanzado'
-  }, {
-    group: 'JS',
-    name: 'Angular 1+',
-    level: 'Avanzado'
-  }, {
-    group: 'JS',
-    name: 'BackboneJS',
-    level: 'Avanzado',
-  }, {
-    group: 'JS',
-    name: 'RequireJS',
-    level: 'Avanzado'
-  }, {
-    group: 'JS',
-    name: 'Gulp',
-    level: 'Intermedio',
-  }, {
-    group: 'JS',
-    name: 'Grunt',
-    level: 'Intermedio',
-  }, {
-    group: 'JS',
-    name: 'Jasmine',
-    level: 'Intermedio',
-  }, {
-    group: 'JS',
-    name: 'Grunt',
-    level: 'Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'Tailwind CSS',
-    level: 'Básico / Intermedio',
+    items: [{
+      key:'JS-00',
+      name: 'ReactJS',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-01',
+      name: 'Redux',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-02',
+      name: 'Angular 2+',
+      level: 'bg-lime-300 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-04',
+      name: 'Typescript',
+      level: 'bg-lime-300 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-05',
+      name: 'NodeJS',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-06',
+      name: 'Vanilla Javascript',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-07',
+      name: 'Express',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-08',
+      name: 'Webpack',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-09',
+      name: 'Vite',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-10',
+      name: 'jQuery',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-11',
+      name: 'Angular 1+',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-12',
+      name: 'BackboneJS',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-13',
+      name: 'RequireJS',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-14',
+      name: 'Gulp',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-15',
+      name: 'Grunt',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'JS-16',
+      name: 'Jasmine',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }]
   }, {
     group: 'CSS',
-    name: 'Tailwind UI',
-    level: 'Básico / Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'SASS',
-    level: 'Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'LESS',
-    level: 'Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'CSS',
-    level: 'Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'BEM',
-    level: 'Intermedio',
-  }, {
-    group: 'CSS',
-    name: 'Bootstrap',
-    level: 'Intermedio',
+    items: [{
+      key:'CSS-00',
+      name: 'Tailwind CSS',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-01',
+      name: 'Tailwind UI',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-02',
+      name: 'SASS',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-03',
+      name: 'LESS',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-04',
+      name: 'CSS',
+      level: 'bg-lime-600 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-05',
+      name: 'BEM',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'CSS-06',
+      name: 'Bootstrap',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }]
   }, {
     group: 'Backend',
-    name: 'Python',
-    level: 'Básico / Intermedio',
-  }, {
-    group: 'Backend',
-    name: 'Django',
-    level: 'Básico / Intermedio',
-  }, {
-    group: 'Otros',
-    name: 'Git',
-    level: 'Intermedio',
-  }, {
-    group: 'Otros',
-    name: 'Metodologías Ágiles',
-    level: 'Intermedio',
+    items: [{
+      key:'B-00',
+      name: 'Python',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'B-01',
+      name: 'Django',
+      level: 'bg-lime-400 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }]
   }, {
     group: 'Otros',
-    name: 'Pruebas unitarias',
-    level: 'Intermedio',
-  }, {
-    group: 'Otros',
-    name: 'Pruebas de integración',
-    level: 'Intermedio',
-  }, {
-    group: 'Otros',
-    name: 'Usabilidad',
-    level: 'Intermedio',
-  }, {
-    group: 'Otros',
-    name: '',
-    level: 'Intermedio',
-  }], 
+    items: [{
+      key:'O-00',
+      name: 'Git',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'O-01',
+      group: 'Otros',
+      name: 'Metodologías Ágiles',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'O-02',
+      group: 'Otros',
+      name: 'Pruebas unitarias',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'0-03',
+      group: 'Otros',
+      name: 'Pruebas de integración',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }, {
+      key:'0-04',
+      group: 'Otros',
+      name: 'Usabilidad',
+      level: 'bg-lime-500 text-white px-3 py-1 my-1 mx-1 inline rounded-md flex-1'
+    }],
+  }],   
   en: [{
     group: 'JS',
-    name: 'ReactJS',
-    level: 'Mid level'
-  }, {
-    group: 'JS',
-    name: 'Redux',
-    level: 'Basic'
-  }, {
-    group: 'JS',
-    name: 'Angular 2+',
-    level: 'Very Basic'
-  }, {
-    group: 'JS',
-    name: 'Typescript',
-    level: 'Very Basic'
-  }, {
-    group: 'JS',
-    name: 'NodeJS',
-    level: 'Basic'
-  }, {
-    group: 'JS',
-    name: 'Vanilla Javascript',
-    level: 'Mid level'
-  }, {
-    group: 'JS',
-    name: 'Express',
-    level: 'Basic'
-  }, {
-    group: 'JS',
-    name: 'Webpack',
-    level: 'Basic'
-  }, {
-    group: 'JS',
-    name: 'Vite',
-    level: 'Basic'
-  }, {
-    group: 'JS',
-    name: 'jQuery',
-    level: 'Advance'
-  }, {
-    group: 'JS',
-    name: 'Angular 1+',
-    level: 'Advance'
-  }, {
-    group: 'JS',
-    name: 'BackboneJS',
-    level: 'Advance',
-  }, {
-    group: 'JS',
-    name: 'RequireJS',
-    level: 'Advance'
-  }, {
-    group: 'JS',
-    name: 'Gulp',
-    level: 'Mid level',
-  }, {
-    group: 'JS',
-    name: 'Grunt',
-    level: 'Mid level',
-  }, {
-    group: 'JS',
-    name: 'Jasmine',
-    level: 'Mid level',
-  }, {
-    group: 'JS',
-    name: 'Grunt',
-    level: 'Mid level',
-  }, {
+    items: [{
+      name: 'ReactJS',
+      level: 'Mid level'
+    }, {
+      name: 'Redux',
+      level: 'Basic'
+    }, {
+      name: 'Angular 2+',
+      level: 'Very Basic'
+    }, {
+      name: 'Typescript',
+      level: 'Very Basic'
+    }, {
+      name: 'NodeJS',
+      level: 'Basic'
+    }, {
+      name: 'Vanilla Javascript',
+      level: 'Mid level'
+    }, {
+      name: 'Express',
+      level: 'Basic'
+    }, {
+      name: 'Webpack',
+      level: 'Basic'
+    }, {
+      name: 'Vite',
+      level: 'Basic'
+    }, {
+      name: 'jQuery',
+      level: 'Advance'
+    }, {
+      name: 'Angular 1+',
+      level: 'Advance'
+    }, {
+      name: 'BackboneJS',
+      level: 'Advance',
+    }, {
+      name: 'RequireJS',
+      level: 'Advance'
+    }, {
+      name: 'Gulp',
+      level: 'Mid level',
+    }, {
+      name: 'Grunt',
+      level: 'Mid level',
+    }, {
+      group: 'JS',
+      name: 'Jasmine',
+      level: 'Mid level',
+    }, {
+      group: 'JS',
+      name: 'Grunt',
+      level: 'Mid level',
+    }],
+   }, {
     group: 'CSS',
-    name: 'Tailwind CSS',
-    level: 'Basic / Mid level',
-  }, {
-    group: 'CSS',
-    name: 'Tailwind UI',
-    level: 'Basic / Mid level',
-  }, {
-    group: 'CSS',
-    name: 'SASS',
-    level: 'Mid level',
-  }, {
-    group: 'CSS',
-    name: 'LESS',
-    level: 'Mid level',
-  }, {
-    group: 'CSS',
-    name: 'CSS',
-    level: 'Mid level',
-  }, {
-    group: 'CSS',
-    name: 'BEM',
-    level: 'Mid level',
-  }, {
-    group: 'CSS',
-    name: 'Bootstrap',
-    level: 'Mid level',
+    items: [{
+      name: 'Tailwind CSS',
+      level: 'Basic / Mid level',
+    }, {
+      group: 'CSS',
+      name: 'Tailwind UI',
+      level: 'Basic / Mid level',
+    }, {
+      group: 'CSS',
+      name: 'SASS',
+      level: 'Mid level',
+    }, {
+      group: 'CSS',
+      name: 'LESS',
+      level: 'Mid level',
+    }, {
+      group: 'CSS',
+      name: 'CSS',
+      level: 'Mid level',
+    }, {
+      group: 'CSS',
+      name: 'BEM',
+      level: 'Mid level',
+    }, {
+      group: 'CSS',
+      name: 'Bootstrap',
+      level: 'Mid level',
+    }]
   }, {
     group: 'Backend',
-    name: 'Python',
-    level: 'Basic / Mid level',
-  }, {
-    group: 'Backend',
-    name: 'Django',
-    level: 'Básico / Mid level',
-  }, {
-    group: 'Others',
-    name: 'Git',
-    level: 'Mid level',
+    items: [{
+      name: 'Python',
+      level: 'Basic / Mid level',
+    }, {
+      group: 'Backend',
+      name: 'Django',
+      level: 'Básico / Mid level',
+    }]
   }, {
     group: 'Others',
-    name: 'Metodologías Ágiles',
-    level: 'Mid level',
-  }, {
-    group: 'Others',
-    name: 'Pruebas unitarias',
-    level: 'Mid level',
-  }, {
-    group: 'Others',
-    name: 'Pruebas de integración',
-    level: 'Mid level',
-  }, {
-    group: 'Others',
-    name: 'Usabilidad',
-    level: 'Mid level',
-  }, {
-    group: 'Others',
-    name: '',
-    level: 'Mid level',
-  }] 
-}
+    items: [{
+      name: 'Git',
+      level: 'Mid level',
+    }, {
+      name: 'Metodologías Ágiles',
+      level: 'Mid level',
+    }, {
+      name: 'Pruebas unitarias',
+      level: 'Mid level',
+    }, {
+      name: 'Pruebas de integración',
+      level: 'Mid level',
+    }, {
+      name: 'Usabilidad',
+      level: 'Mid level',
+    }, {
+      name: '',
+      level: 'Mid level',
+    }]
+  }]
+};

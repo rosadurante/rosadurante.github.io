@@ -2,7 +2,8 @@
 export const PERSONAL_DATA = {
   es: {
     generic: {
-      name: 'Rosa Maria Durante Lerate',
+      name: 'Rosa ',
+      surname: 'Durante',
       city: 'Jerez de la frontera, Cádiz',
       country: 'España',
       email: 'me@rosadurante.com',
@@ -26,30 +27,30 @@ export const PERSONAL_DATA = {
 }
 
 export const ACADEMIC = {
-  es: [{
+  es: {
     title: 'Ingeniería Técnica en Informática de Sistemas',
     ends: 'Octubre 2011'
-  }],
-  en: [{
+  },
+  en: {
     title: 'Barchelor in Computers Sciencie',
     ends: 'October 2011'
-  }]
+  }
 }
 
-export const languages = {
+export const LANGUAGES = {
   es: [{
     name: 'Inglés',
-    nivel: 'Profesional'
+    level: 'Profesional'
   }, {
     name: 'Español',
-    nivel: 'Nativo'
+    level: 'Nativo'
   }],
   en: [{
     name: 'English',
-    nivel: 'Professional'
+    level: 'Professional'
   }, {
     name: 'Spanish',
-    nivel: 'Native'
+    level: 'Native'
   }]
 }
 
