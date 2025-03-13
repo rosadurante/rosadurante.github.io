@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+:root {
+    --green: #A6CA38;
+    --blue: #5FA6E0;
+    --magenta: #D06FB8;
+    --yellow: #E8D13B;
+    --orange: #E69B48;
+    --turquoise: #5FCAB3;
+
+    --primary-color: #A6CA38;
+    --secondary-color: #333333;
+    --tertiary-color: #fafafa;
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
+    --font-mono: 'Space Mono', monospace;
+}
+
+@theme inline {
+    --text-xs: 10px;
+    --text-sm: 12px;
+    --text-base: 16px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+    --text-2xl: 32px;
+    --text-3xl: 40px;
+    --text-4xl: 48px;
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
+    --font-mono: 'Space Mono', monospace;
+
+    --font-heading: "Oswald", sans-serif;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-base: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    
+    --rounded-xs: 4px;
+    --rounded-sm: 8px;
+
+    --color-green: var(--green);
+    --color-turquoise: var(--turquoise);
+    --color-blue: var(--blue);
+    --color-magenta: var(--magenta);
+    --color-yellow: var(--yellow);
+    --color-orange: var(--orange);
+
+    --color-background: var(--tertiary-color);
+    --color-foreground: var(--secondary-color);
+    --color-primary: var(--primary-color);
+    --color-secondary: var(--secondary-color);
+    --color-tertiary: var(--tertiary-color);
+}
+
+@layer base {
+  html,
+  body,
+  #app {
+    @apply m-0 p-0 w-full h-full relative overflow-hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
