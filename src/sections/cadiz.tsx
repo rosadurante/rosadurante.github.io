@@ -1,5 +1,6 @@
 import { positionContainer } from "../container";
 import { cn } from "../utils";
+import { Pencil, Star } from "lucide-react";
 
 type Props = {
     readonly activeContainer: positionContainer | null;
@@ -10,13 +11,18 @@ export default function Cadiz({ activeContainer, position }: Props) {
     return (
         <div className={cn("absolute top-0 left-0 w-full h-full inset-0 flex flex-col delay-100 duration-500 opacity-0 mix-blend-normal py-8 space-y-8", activeContainer === position && "opacity-100 z-20")}   >
             <h1 className="text-white text-4xl font-bold font-heading sticky top-0 left-0 w-full z-30">CÁDIZ</h1>
-            <div className="flex-1 px-8 overflow-auto space-y-2">
-                <div className="p-4 bg-black/50 text-white text-left">
-                    <p>Titulada en Ingeniería Técnica en Informática de Sistemas por la Universidad de Cádiz (2005-2010)</p>
-                    <p>Desde pequeña he destacado en matemáticas y resolución de problemas y encontré en la informática una pasión por la programación.</p>
+            <div className="flex-1 px-16 overflow-auto space-y-2">
+                <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center">
+                    <Star className="h-8 w-8 flex-shrink-0" />
+                    <div>
+                        <p>Titulada en Ingeniería Técnica en Informática de Sistemas por la Universidad de Cádiz (2005-2010)</p>
+                        <p>Desde pequeña he destacado en matemáticas y resolución de problemas y encontré en la informática una pasión por la programación.</p>
+                    </div>
                 </div>
 
-                <div className="p-4 bg-black/50 text-white text-left flex flex-wrap gap-x-2">
+                <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center">
+                    <Pencil className="h-8 w-8 flex-shrink-0" />
+                    <div className="flex flex-row gap-x-2 flex-wrap">
                     <span className="text-md font-bold">Responsabilidad</span>
                     <span className="text-md font-bold">Esfuerzo</span>
                     <span className="text-md font-bold">Pragmatismo</span>
@@ -25,6 +31,7 @@ export default function Cadiz({ activeContainer, position }: Props) {
                     <span className="text-md font-bold">Aprendizaje</span>
                     <span className="text-md font-bold">Adaptación</span>
                     <span className="text-md font-bold">Diversión</span>
+                    </div>
                 </div>
 
                 <div className="p-4 text-white text-left space-y-2">

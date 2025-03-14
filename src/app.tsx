@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Container, positionContainer } from "./container";
-import { cn } from "./utils";
 import { Cover } from "./cover";
+
 import Cadiz from "./sections/cadiz";
 import Sevilla from "./sections/sevilla";
+import Londres from "./sections/londres";
+import Jerez from "./sections/jerez";
+import RosaDurante from "./sections/rosadurante";
 
 function App() {
     const [activeContainer, setActiveContainer] = useState<positionContainer | null>(null);
@@ -15,20 +18,23 @@ function App() {
                 <div className="relative h-full w-full flex flex-col items-center justify-center">
                     <Container position="top" activeContainer={activeContainer} setActiveContainer={setActiveContainer} >
                         <Cover bgImage="cadiz.jpg" bgColor="bg-green" position="top" activeContainer={activeContainer} heading={<><p>CÁDIZ</p> (1987 - 2010)</>} />
-                        {/* <Cadiz activeContainer={activeContainer} position="top" /> */}
+                        <Cadiz activeContainer={activeContainer} position="top" />
                     </Container>
                     <Container position="right" activeContainer={activeContainer} setActiveContainer={setActiveContainer}>
                         <Cover bgImage="sevilla.jpg" bgColor="bg-orange" position="right" activeContainer={activeContainer} heading={<><p>SEVILLA</p> (2010 - 2012)</>} />
-                        {/* <Sevilla activeContainer={activeContainer} position="right" /> */}
+                        <Sevilla activeContainer={activeContainer} position="right" />
                     </Container>
                     <Container position="bottom" activeContainer={activeContainer} setActiveContainer={setActiveContainer}>
                         <Cover bgImage="jerez.jpg" bgColor="bg-yellow" position="bottom" activeContainer={activeContainer} heading={<><p>JEREZ</p> (2017 - HOY)</>}  />
+                        <Jerez activeContainer={activeContainer} position="bottom" />
                     </Container>
                     <Container position="left" activeContainer={activeContainer} setActiveContainer={setActiveContainer}>   
                         <Cover bgImage="londres.avif" bgColor="bg-magenta" position="left" activeContainer={activeContainer} heading={<><p>LONDRES</p> (2012 - 2017)</>} />
+                        <Londres activeContainer={activeContainer} position="left" />
                     </Container>
                     <Container position="center" activeContainer={activeContainer} setActiveContainer={setActiveContainer}>
                         <Cover bgImage="profile.jpeg" bgColor="bg-turquoise" position="center" activeContainer={activeContainer} heading={<><p>ROSA</p> <p>DURANTE</p></>} />
+                        <RosaDurante activeContainer={activeContainer} position="center" />
                     </Container>
                 </div>
             </div>  
