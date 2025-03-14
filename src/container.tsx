@@ -17,7 +17,7 @@ export function Container({position, activeContainer, setActiveContainer, childr
     const _blockStyles = {
       'top': 'w-full h-1/5 top-0 left-0 py-2 md:top-0 md:left-0 md:pr-2 md:pb-2 md:pt-0 md:w-2/3 md:h-1/3',
       'left': 'w-full h-1/5 max-md:top-3/5 left-0 bottom-1/5 py-2 md:left-0 md:bottom-0 md:pr-2 md:pt-2 md:pb-0 md:w-1/3 md:h-2/3',
-      'right': 'w-full h-1/5 top-1/5 max-md:left-0py-2 md:right-0 md:top-0 md:pl-2 md:pb-2 md:pt-0 md:w-1/3 md:h-2/3',
+      'right': 'w-full h-1/5 top-1/5 max-md:left-0 py-2 md:right-0 md:top-0 md:pl-2 md:pb-2 md:pt-0 md:w-1/3 md:h-2/3',
       'bottom': 'w-full h-1/5 bottom-0 max-md:left-0 max-md:top-4/5 py-2 md:bottom-0 md:right-0 md:pl-2 md:pt-2 md:pb-0 md:w-2/3 md:h-1/3',
       'center': 'w-full h-1/5 top-2/5 max-md:left-0 py-2 md:top-1/3 md:left-1/3 md:p-2 md:w-1/3 md:h-1/3',
     }
