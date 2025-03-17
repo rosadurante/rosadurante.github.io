@@ -53,13 +53,13 @@ export function Container({position, activeContainer, setActiveContainer, childr
   }, [activeContainer]);
     
     return (
-        <button className={cn('group', _defaultStyles, activeContainer === position ? _activeStyles : activeContainer !== null && activeContainer !== position && _unactiveStyles)} onClick={() => setActiveContainer(activeContainer === position ? null : position)}>
+        <div className={cn('group', _defaultStyles, activeContainer === position ? _activeStyles : activeContainer !== null && activeContainer !== position && _unactiveStyles)} onClick={() => setActiveContainer(activeContainer === position ? null : position)}>
             <div className={cn(
               "w-full h-full rounded-md transition-all duration-1000 relative",
               activeContainer === position && 'opacity-100'
         )}>
           {children}
             </div>
-        </button>
+        </div>
     );
 }
