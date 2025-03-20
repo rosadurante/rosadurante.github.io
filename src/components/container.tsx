@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { cn } from "./utils";
+import { cn } from "../utils";
 
 export type positionContainer = 'top' | 'left' | 'right' | 'bottom' | 'center';
 

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { positionContainer } from "./container";
-import { cn } from "./utils";
+import { cn } from "../utils";
 
 export type CoverProps = {
     readonly bgImage: string;

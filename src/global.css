@@ -58,13 +58,25 @@
 }
 
 @layer base {
-  html,
+  /* html,
   body,
   #app {
     @apply m-0 p-0 w-full h-full relative overflow-hidden;
-  }
+  } */
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media print {
+  /* Apply padding to the first element on a new page */
+
+  .break-before-page {
+    break-before: page; /* Forces a new page */
+  }
+
+  .break-before-page:first-of-type {
+    padding-top: 50px !important; /* Ensures the first element after a break has padding */
   }
 }

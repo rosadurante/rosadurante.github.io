@@ -1,5 +1,6 @@
-import { Star } from "lucide-react";
-import { positionContainer } from "../container";
+import { Sparkles, Star } from "lucide-react";
+import { Link } from "react-router-dom";
+import { positionContainer } from "./container";
 import { cn } from "../utils";
 
 type Props = {
@@ -12,12 +13,19 @@ export default function RosaDurante({ activeContainer, position }: Props) {
         <div className={cn("absolute top-0 left-0 w-full h-full inset-0 flex flex-col delay-100 duration-500 opacity-0 mix-blend-normal py-8 space-y-8", activeContainer === position && "opacity-100 z-20")}   >
             <div className="text-white text-2xl md:text-4xl font-bold font-heading sticky top-0 left-0 w-full z-30 flex items-center justify-center"><h1>ROSA MARIA DURANTE LERATE</h1></div>
             <div className="flex-1 px-8 overflow-auto">
-                <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center">
+                <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-start">
                     <Star className="h-8 w-8 flex-shrink-0" />
                     <div>
                         <p><b>Localidad actual:</b> Jerez de la Frontera, Cádiz, España</p>
                         <p><b>Fecha y lugar de nacimiento:</b> 20 de diciembre de 1987, Cádiz, España</p>
                         <p><b>Contacto:</b> <a className="underline italic text-turquoise" href="mailto:me@rosadurante.com">me@rosadurante.com</a> / <a className="underline italic text-turquoise" href="tel:+34654344743">+34 654 344 743</a></p>
+                    </div>
+                </div>
+
+                <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center mt-2">
+                    <Sparkles className="h-8 w-8 flex-shrink-0" />
+                    <div>
+                        <Link to="?cv=true" className="underline italic text-turquoise">Curriculum Vitae (versión para impresión)</Link>
                     </div>
                 </div>
 
