@@ -12,15 +12,17 @@ export function Home() {
 
     const handleWheel = (e: React.WheelEvent<HTMLDivElement>) => {
         e.stopPropagation();
+        e.preventDefault();
 
         if (hoverTo) return;
+        if (activeContainer) return;
 
         let positions: positionContainer[] = [];
 
         if (window.innerWidth < 768) {
-            positions = e.deltaY < 0 ? ['top', 'right', 'center', 'left', 'bottom'] as positionContainer[] : ['bottom', 'left', 'center', 'right', 'top'] as positionContainer[];
+            positions = e.deltaY < 0 ? ['top', 'right', 'center', 'left', 'bottom'] : ['bottom', 'left', 'center', 'right', 'top'];
         } else {
-            positions = e.deltaY < 0 ? ['top', 'right', 'bottom', 'left', 'center'] as positionContainer[] : ['center', 'left', 'bottom', 'right', 'top'] as positionContainer[];
+            positions = e.deltaY < 0 ? ['top', 'right', 'bottom', 'left', 'center'] : ['center', 'left', 'bottom', 'right', 'top'];
         }
         
         const interval = setInterval(() => {
@@ -36,7 +38,7 @@ export function Home() {
     }
 
     return (
-        <div className="h-screen bg-[repeating-linear-gradient(135deg,white_0px,white_50px,black_50px,black_100px)] bg-repeat p-6" onWheel={handleWheel}>
+        <div className="h-screen bg-[repeating-linear-gradient(135deg,white_0px,white_50px,black_50px,black_100px)] bg-repeat p-6 overflow-hidden" onWheel={handleWheel}>
             <div className="w-full h-full md:max-w-screen-xl mx-auto animate-fadeInScale">
                 <div className="relative h-full w-full flex flex-col items-center justify-center">
                     <Container position="top" activeContainer={activeContainer} setActiveContainer={setActiveContainer} >
