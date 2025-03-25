@@ -55,6 +55,9 @@
     --color-primary: var(--primary-color);
     --color-secondary: var(--secondary-color);
     --color-tertiary: var(--tertiary-color);
+
+    --shadow-icon: inset 0px 0px 10px 0px var(--color-turquoise);
+    --shadow-icon-hover: inset 0 0px 46px 0px var(--color-turquoise);
 }
 
 @layer base {

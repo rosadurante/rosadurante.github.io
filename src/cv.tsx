@@ -73,7 +73,8 @@ export function CurriculumVitae() {
                     <p>Me considero una persona curiosa, inquieta y con muchas ganas de aprender. Me gusta afrontar pequeños retos e ir superándome cada día.
                     El deporte es esencial en mi vida, practico Crossfit desde hace 2 años y hace poco me introduje en el mundo del baile latino.
                     Últimamente estoy consumiendo muchos posdcast de interes, especialmente dentro del ámbito de la neurociencia y la psicología.
-                    Las dos mayores prioridades en mi vida son mi salud y mi familia..</p>
+                            Las dos mayores prioridades en mi vida son mi salud y mi familia.</p>
+                        <p>Para ver más sobre mi, puedes visitar mi <a href="https://rosadurante.github.io" className="underline">página web</a>.</p>
                 </div>
                 </div>
             </div>

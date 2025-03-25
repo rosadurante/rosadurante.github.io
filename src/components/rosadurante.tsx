@@ -1,4 +1,4 @@
-import { Sparkles, Star } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { positionContainer } from "./container";
 import { cn } from "../utils";
@@ -18,8 +18,22 @@ export default function RosaDurante({ activeContainer, position }: Props) {
                     <div>
                         <p><b>Localidad actual:</b> Jerez de la Frontera, Cádiz, España</p>
                         <p><b>Fecha y lugar de nacimiento:</b> 20 de diciembre de 1987, Cádiz, España</p>
-                        <p><b>Contacto:</b> <a className="underline italic text-turquoise" href="mailto:me@rosadurante.com">me@rosadurante.com</a> / <a className="underline italic text-turquoise" href="tel:+34654344743">+34 654 344 743</a></p>
+                        {/* <p><b>Contacto:</b> <a className="underline italic text-turquoise" href="mailto:me@rosadurante.com">me@rosadurante.com</a> / <a className="underline italic text-turquoise" href="tel:+34654344743">+34 654 344 743</a></p> */}
+                    <div className="flex flex-row gap-x-4 my-5">
+                    <div className="border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white">
+                        <a href="mailto:me@rosadurante.com" className="underline italic"><Mail className="h-8 w-8 flex-shrink-0" /></a>
                     </div>
+                    <div className="border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white">
+                        <a href="tel:+34654344743" className="underline italic "><Phone className="h-8 w-8 flex-shrink-0" /></a>
+                    </div>
+                    <div className="border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white">
+                        <a href="https://www.linkedin.com/in/rdurantelerate/" className="underline italic "><Linkedin className="h-8 w-8 flex-shrink-0" /></a>
+                    </div>
+                    <div className="border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white">
+                        <a href="https://github.com/rosadurante" className="underline italic "><Github className="h-8 w-8 flex-shrink-0" /></a>
+                    </div>
+                        </div>
+                        </div>
                 </div>
 
                 <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center mt-2">
