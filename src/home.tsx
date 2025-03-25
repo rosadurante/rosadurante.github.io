@@ -32,7 +32,7 @@ export function Home() {
 
             setHoverTo(positions[0]);
             positions.shift();
-        }, 300);
+        }, 500);
     }
 
     return (
