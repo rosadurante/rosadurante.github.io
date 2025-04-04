@@ -1,5 +1,5 @@
 import React, {
-    createContext, useContext, useMemo, useState
+    createContext, useMemo, useState
 } from "react";
 import ReactDOM from "react-dom/client";
 
@@ -14,7 +14,7 @@ export const LanguageContext = createContext<{
     acceptedLangs: Language[];
     setLang: (lang: Language) => void;
 }>({
-    lang: 'es',
+    lang: 'es' as Language,
     acceptedLangs: ['es', 'en'],
     setLang: () => { }
 });
@@ -22,18 +22,13 @@ export const LanguageContext = createContext<{
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
     const [lang, setLang] = useState('es' as Language);
     const acceptedLangs = ['es', 'en'] as Language[];
+
     return <LanguageContext.Provider value={useMemo(() => ({ lang, acceptedLangs, setLang }), [lang, setLang])}>{children}</LanguageContext.Provider>;
 };
 
 function App() {
     const [params, setParams] = useSearchParams();
     const cv = params.get("cv");
-
-    // Set default language
-    const { setLang, acceptedLangs } = useContext(LanguageContext);
-
-    const browserLang = navigator.language.split("-")[0] as Language;
-    if (browserLang && acceptedLangs.find(lang => lang === browserLang)) { setLang(browserLang); }
 
     return cv ? <CurriculumVitae /> : <Home />;
 }

@@ -2,7 +2,8 @@ import { Github, Linkedin, Mail, Phone, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { positionContainer } from "./container";
 import { cn } from "../utils";
-import { useMemo } from "react";
+import { useContext, useEffect } from "react";
+import { LanguageContext } from "../app";
 
 type Props = {
     readonly activeContainer: positionContainer | null;
@@ -10,13 +11,16 @@ type Props = {
 }
 
 export default function RosaDurante({ activeContainer, position }: Props) {
-    const lang = useMemo(() => localStorage.getItem("lang") ?? navigator.language.split("-")[0], [localStorage.getItem("lang")]);
+    const { lang, setLang } = useContext(LanguageContext);
 
     const toggleLanguage = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.stopPropagation();
-        localStorage.setItem("lang", lang === 'es' ? 'en' : 'es');
-        window.location.reload();
+        setLang(lang === 'es' ? 'en' : 'es');
     }
+
+    useEffect(() => {
+        console.log(lang);
+    }, [lang]);
 
     return (
         <div className={cn("absolute top-0 left-0 w-full h-full inset-0 flex flex-col delay-100 duration-500 opacity-0 mix-blend-normal py-8 space-y-8", activeContainer === position && "opacity-100 z-20")}   >
@@ -41,10 +45,13 @@ export default function RosaDurante({ activeContainer, position }: Props) {
                 <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-center mt-2">
                     <Sparkles className="h-8 w-8 flex-shrink-0" />
                     <div>
-                        <Link to="?cv=true" className="underline italic text-turquoise">Curriculum Vitae (versión para impresión)</Link>
+                        <Link to="?cv=true" className="underline italic text-turquoise">
+                            {lang === 'es' ? "Curriculum Vitae (versión para impresión)" : "Curriculum Vitae (print version)"}
+                        </Link>
                     </div>
                 </div>
 
+                {lang === 'es' ? (
                 <div className="p-8 text-white text-left space-y-2">
                     <p>Me considero una persona curiosa, inquieta y con muchas ganas de aprender. Me gusta afrontar pequeños retos e ir superándome cada día.</p>
                     <p>El deporte es esencial en mi vida, practico Crossfit desde hace 2 años y hace poco me introduje en el mundo del baile latino.</p>
@@ -52,6 +59,15 @@ export default function RosaDurante({ activeContainer, position }: Props) {
                     <p>Las dos mayores prioridades en mi vida son mi salud y mi familia.</p>
                     <p>Me gusta viajar y conocer nuevos lugares. Soy mucho más de naturaleza y pueblos que de grandes ciudades.</p>
                 </div>
+                ) : (
+                    <div className="p-8 text-white text-left space-y-2">
+                        <p>I consider myself a curious, restless and very motivated person. I like to face small challenges and overcome them every day.</p>
+                        <p>The sport is essential in my life, I practice Crossfit for 2 years and recently I got into the latin dance world.</p>
+                        <p>Lately I'm consuming many podcasts of interest, especially in the field of neuroscience and psychology.</p>
+                        <p>The two biggest priorities in my life are my health and my family.</p>
+                        <p>I like to travel and discover new places. I'm more of a nature and small towns person than big cities.</p>
+                    </div>
+                )}
             </div>
         </div>
     );
