@@ -1,29 +1,17 @@
 import { Pencil } from "lucide-react";
 import { positionContainer } from "./container";
 import { cn } from "../utils";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Collapsible } from "./collapsible";
+import { Experience } from "../datas/experience";
+import { LanguageContext } from "../app";
 
 type Props = {
     readonly activeContainer: positionContainer | null;
     readonly position: positionContainer;
     readonly key: string;
     readonly title: string;
-    readonly data: {
-        skills: string[];
-        jobs: {
-            key: string;
-            icon: React.ElementType;
-            title: {
-                position: string;
-                where: string;
-                url: string;
-                start: string;
-                end: string;
-            };
-            description: string;
-        }[];
-    };
+    readonly data: Experience;
 }
 
 export function Content({ activeContainer, position, key, title, data }: Props) {
@@ -32,6 +20,8 @@ export function Content({ activeContainer, position, key, title, data }: Props) 
         e.stopPropagation();
         setShowMore(showMore === index ? -1 : index);
     }
+
+    const { lang } = useContext(LanguageContext);
 
     return (
         <div className={cn("absolute top-0 left-0 w-full h-full inset-0 flex flex-col delay-100 duration-500 opacity-0 mix-blend-normal py-8 space-y-8", activeContainer === position && "opacity-100 z-20")}>
@@ -42,7 +32,7 @@ export function Content({ activeContainer, position, key, title, data }: Props) 
                     <div className="flex flex-row gap-x-2 flex-wrap">
 
                         {/* <p>En esta etapa ha afianzado/adquirido los conocimientos de: </p> */}
-                        {data.skills.map((skill) => (
+                        {(data.skills[lang] as string[]).map((skill) => (
                             <span key={`${key}-skill-${skill}`} className="text-md font-bold">{skill}</span>
                         ))}
                     </div>
