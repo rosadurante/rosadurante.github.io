@@ -67,7 +67,7 @@ export function CurriculumVitae() {
                     ))}
                         </div>
                 </div>
-                <div className="flex flex-col gap-y-2 print:break-before-page print:py-10">
+                <div className="flex flex-col gap-y-2">
                     <h2 className="text-xl font-heading font-bold pb-2 uppercase w-2/3">
                         <User className="w-5 h-5 inline-block mr-2" />
                         {lang === 'es' ? <span>Sobre mí</span> : <span>About me</span>}

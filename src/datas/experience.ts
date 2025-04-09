@@ -476,8 +476,8 @@ contemplating different sections, staff working in different sections, scores of
                             'en': "Apr 2024",
                         },
                         end: {
-                            'es': "Dic 2024",
-                            'en': "Dic 2024",
+                            'es': "Abr 2025",
+                            'en': "Apr 2025",
                         }
                     },
                     skills: {
@@ -488,45 +488,16 @@ contemplating different sections, staff working in different sections, scores of
                         'es': `En esta agencia estuve desarrollando una nueva y pionera aplicación web dentro el ámbito de las energías renovables, [nTeaser](https://nteaser.com/es),
 que recoje projectos de energías renovables en oferta en el mercado, para que los inversores puedan encontrar el proyecto que mejor se adapte a sus necesidades e invertir en ellos.
 
-Tanto en la aplicación web como en la página comercial fui la desarrolladora principal (con soporte de mi compañero Senior) y está desarrollado en TypeScript, con ReactJS, NodeJS, TailwindCSS.`,
+Tanto en la aplicación web como en la página comercial fui la desarrolladora principal (con soporte de mi compañero Senior) y está desarrollado en TypeScript, con ReactJS, NodeJS, TailwindCSS.
+
+Hace unos meses The Seed Squad comenzó a ser parte de Tifin, por lo que pasé a formar parte del desarrollo de varios portales web del ámbito financiero utilizando TypeScript, ReactJS, TailwindCSS, MaterialUI y ShadCN.`,
                         'en': `In this agency I was developing a new and pioneering web application within the field of renewable energies, [nTeaser](https://nteaser.com/es),
 
-Both in the web application and in the commercial page I was the main developer (with support from my senior colleague) and it is developed in TypeScript, with ReactJS, NodeJS, TailwindCSS.`
+Both in the web application and in the commercial page I was the main developer (with support from my senior colleague) and it is developed in TypeScript, with ReactJS, NodeJS, TailwindCSS.
+
+Few months ago The Seed Squad became part of Tifin, so I became part of the development of several web portals in the financial sector in TypeScript using mainly ReactJS, TailwindCSS, MaterialUI and ShadCN.`
                     },
                 },
-                {
-                    key: "tifin",
-                    icon: Star,
-                    title: {
-                        position: {
-                            'es': "Desarrolladora Frontend",
-                            'en': "Frontend Developer",
-                        },
-                        where: {
-                            'es': "Tifin",
-                            'en': "Tifin",
-                        },
-                        url: 'https://tifin.com/',
-                        start: {
-                            'es': "Dic 2024",
-                            'en': "Dic 2024",
-                        },
-                        end: {
-                            'es': "Actualmente",
-                            'en': "Currently",
-                        }
-                    },
-                    skills: {
-                        'es': 'ReactJS, Redux, TypeScript, TailwindCSS, ShadCN, Git, Jira, Figma',
-                        'en': 'ReactJS, Redux, TypeScript, TailwindCSS, ShadCN, Git, Jira, Figma',
-                    },
-                    description: {
-                        'es': `Tifin Spain es una sede de Tifin, una empresa americana que desarrolla proyectos utilizando Inteligencia Artifical para servicios financieros. Al fusionar The Seed Squad en Tifin,
-pasé a formar parte de esta empresa como desarrolladora Frontend. En este tiempo he participado en el desarrollo de varios portales web en TypeScript utilizando principalmente ReactJS, TailwindCSS, MaterialUI y ShadCN.`,
-                        'en': `Tifin Spain is a branch of Tifin, an American company that develops projects using Artificial Intelligence for financial services. By merging The Seed Squad into Tifin,
-I became part of this company as a Frontend Developer. In this time I have participated in the development of several web portals in TypeScript using mainly ReactJS, TailwindCSS, MaterialUI and ShadCN.`
-                    },
-                }
             ]
         
     }
