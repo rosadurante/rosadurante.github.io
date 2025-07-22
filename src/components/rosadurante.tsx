@@ -28,16 +28,16 @@ export default function RosaDurante({ activeContainer, position }: Props) {
             <div className="flex-1 px-8 overflow-auto">
                 <div className="p-4 bg-black/50 text-white text-left flex flex-row gap-x-4 justify-start items-start">
                     <Star className="h-8 w-8 flex-shrink-0" />
-                    <div>
+                    <div className="flex flex-col gap-y-2">
                         {lang === 'es' ? <p><b>Localidad actual:</b> Jerez de la Frontera, Cádiz, España</p> : <p><b>Current location:</b> Jerez de la Frontera, Cádiz, Spain</p>}
                         {lang === 'es' ? <p><b>Fecha y lugar de nacimiento:</b> 20 de diciembre de 1987, Cádiz, España</p> : <p><b>Date and place of birth:</b> 20th December 1987, Cádiz, Spain</p>}
                         {/* <p><b>Contacto:</b> <a className="underline italic text-turquoise" href="mailto:me@rosadurante.com">me@rosadurante.com</a> / <a className="underline italic text-turquoise" href="tel:+34654344743">+34 654 344 743</a></p> */}
-                    <div className="flex flex-row gap-x-4 my-5">
-                        <a href="mailto:me@rosadurante.com" target="_blank" className="underline italic flex border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Mail className="h-8 w-8 flex-shrink-0" /></a>
-                        <a href="tel:+34654344743" target="_blank" className="underline italic flex border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Phone className="h-8 w-8 flex-shrink-0" /></a>
-                        <a href="https://www.linkedin.com/in/rdurantelerate/" target="_blank" className="underline italic flex border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Linkedin className="h-8 w-8 flex-shrink-0" /></a>
-                        <a href="https://github.com/rosadurante" target="_blank" className="underline italic flex border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Github className="h-8 w-8 flex-shrink-0" /></a>
-                        <a href="#" target="_self" className="flex border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={toggleLanguage}><span className="h-8 w-8 flex-shrink-0 text-xl">{lang === 'es' ? 'EN' : 'ES'}</span></a>
+                    <div className="flex flex-row gap-x-4 my-2 flex-wrap">
+                        <a href="mailto:me@rosadurante.com" target="_blank" className="underline italic fl§ex my-2 border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Mail className="h-8 w-8 flex-shrink-0" /></a>
+                        <a href="tel:+34654344743" target="_blank" className="underline italic flex my-2 border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Phone className="h-8 w-8 flex-shrink-0" /></a>
+                        <a href="https://www.linkedin.com/in/rdurantelerate/" target="_blank" className="underline italic flex my-2 border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Linkedin className="h-8 w-8 flex-shrink-0" /></a>
+                        <a href="https://github.com/rosadurante" target="_blank" className="underline italic flex my-2 border-0 rounded-full p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={(e) => e.stopPropagation()}><Github className="h-8 w-8 flex-shrink-0" /></a>
+                        <a href="#" target="_self" className="flex flex-shrink-0 border-0 rounded-full my-2 p-4 shadow-icon hover:shadow-icon-hover transition-all duration-500 text-turquoise hover:text-white" onClick={toggleLanguage}><p className="h-8 w-8 text-xl">{lang === 'es' ? 'EN' : 'ES'}</p></a>
                     </div>
                     </div>
                 </div>
